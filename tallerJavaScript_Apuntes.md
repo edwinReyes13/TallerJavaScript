@@ -16,13 +16,13 @@ conocer sintaxis Markdown
 1.-parrafos [parrafo 1...]
 Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.-->
 
-_cursiva_
-**negrita**
-~tachado~
-**_cursiva y negrita_**
-_~cursiva y tachado~_
-**_negrita y tachado_**
-**_~cursiva, negrita y tachado~_**
+cursiva
+*negrita*
+tachado
+*cursiva y negrita*
+cursiva y tachado
+*negrita y tachado*
+*cursiva, negrita y tachado*
 
 
 #     encabezado nivel 1
@@ -59,7 +59,7 @@ enlaces
 [enlace a google](https://www.google.com)
 
 imagenes
-[texto alternativo] (URLdelaimagen)
+![texto alternativo] (URLdelaimagen)
 
 tablas
 |columna 1 |columna 2|columna 3|
@@ -77,11 +77,83 @@ en javascript  una variables se define asi:
 let saludo = "Hola Mundo";
 
 pero si queremos sacar un bloque completo de codigo utilizamos':
-js
-let estudiante="juan perez";
-let edad=19;
-let isestudiante=true;
-let calificacion=90.0;
+--- js
+//Asi se utliza los comentarsios en javaScrip de una consola
+console.log("bienbenido al miundo de la programcion frontend con javaScrip")
+
+console.log("esta es otra linia  "+ "Y se concatena el +")
+
+/*
+este es un comentario de mas de una linia
+*/
+
+/*en javascrp*/
+
+//AHORA vamoos a trabajar con decalaracion de varaibales:
+let estudiante="Edwin reyes"
+let edad=19
+let isEstudiante=true
+let calificacion=92.8
+
+
+
+console.log("estudiante" + estudiante)
+console.log("edad" + edad)
+console.log("estudia" + isEstudiante)
+console.log(typeof + calificacion)
+console.log("el promedio global de estudiante es ${calificacion}")
+
+let val1;
+let val2;
+    val1=prompt("ingresa un numero");
+    val2=prompt("ingrasa el segundo numero");
+let num1=parseInt(val1);
+let num2=parseInt(val2);
+   console.log("la suma es: " + (num1+num2));
+
+
+/*javaScrip es deblimente  tioeado  esto significa que
+no es estricto en la decalracion  de tipos de datos .Es decir no 
+fuerza a que inicialmente digas el tipo de dato de la variable */
+
+
+//estructura 
+let Carp=200
+----
+--- js
+// alert("eatamos en el archivo EstructuraCiclo .js")
+
+
+//Estructura de control while
+for(let i=0; i<=10;  i++){
+    console.log("no interaccion" + i)
+}
+
+// 
+let contador=1;
+
+while(contador <10){
+    console.log("no interaccion" + contador)
+    contador++
+}
+
+//control do/while
+let num=1;
+do{
+    console.log("d0/while no inetraccion" + num);
+    num ++;
+} while(num < 10)
+
+    //for in 
+    // bucle itera sobre las propiedades
+
+let estudiante ={ nombre:"Edwin reyes" , edad:18, calificacion: 70}
+
+for (let propiedad in estudiante){
+    console.log(propiedad + ": " + estudiante[propiedad])
+}
+---
+
 
 
 
