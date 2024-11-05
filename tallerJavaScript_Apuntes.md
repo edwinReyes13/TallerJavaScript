@@ -16,13 +16,13 @@ conocer sintaxis Markdown
 1.-parrafos [parrafo 1...]
 Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.-->
 
-cursiva
-*negrita*
-tachado
-*cursiva y negrita*
-cursiva y tachado
-*negrita y tachado*
-*cursiva, negrita y tachado*
+_cursiva_
+**negrita**
+~tachado~
+**_cursiva y negrita_**
+_~cursiva y tachado~_
+**_negrita y tachado_**
+**_~cursiva, negrita y tachado~_**
 
 
 #     encabezado nivel 1
@@ -59,7 +59,7 @@ enlaces
 [enlace a google](https://www.google.com)
 
 imagenes
-![texto alternativo] (URLdelaimagen)
+[texto alternativo] (URLdelaimagen)
 
 tablas
 |columna 1 |columna 2|columna 3|
